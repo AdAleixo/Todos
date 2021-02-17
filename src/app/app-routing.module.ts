@@ -1,3 +1,4 @@
+import { ErrorComponent } from "./error/error.component";
 import { WelcomeComponent } from "./welcome/welcome.component";
 import { LoginComponent } from "./login/login.component";
 import { NgModule } from "@angular/core";
@@ -7,6 +8,7 @@ const routes: Routes = [
   { path: "", component: LoginComponent },
   { path: "login", component: LoginComponent },
   { path: "welcome", component: WelcomeComponent },
+  { path: "**", component: ErrorComponent },
 ];
 
 @NgModule({
